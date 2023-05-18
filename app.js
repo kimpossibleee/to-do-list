@@ -1,5 +1,5 @@
 function addTask() {
-    let input = document.getElementById("taskInput");
+    let input = document.querySelector("#taskInput");
     let task = input.value;
     if (task === "") {
       return;
@@ -29,7 +29,7 @@ function addTask() {
     li.appendChild(checkbox);
     li.appendChild(label);
     li.appendChild(deleteBtn);
-    document.getElementById("taskList").appendChild(li);
+    document.querySelector("#taskList").appendChild(li);
 
     input.value = "";
   }
