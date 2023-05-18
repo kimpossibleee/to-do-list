@@ -33,3 +33,8 @@ function addTask() {
 
     input.value = "";
   }
+
+const addTaskButton = document.querySelector('#addTaskButton')
+addTaskButton.addEventListener('click', function(){
+  addTask()
+})
